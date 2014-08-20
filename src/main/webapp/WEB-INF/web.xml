@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+
+
+	<servlet>
+		<servlet-name>UploadServlet</servlet-name>
+		<servlet-class>ace.demo.appl.UploadServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>RdsInfo</servlet-name>
+		<servlet-class>ace.demo.appl.RdsInfo</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MqsInfo</servlet-name>
+		<servlet-class>ace.demo.appl.MqsInfo</servlet-class>
+	</servlet>
+    <servlet>
+        <servlet-name>OssInfo</servlet-name>
+        <servlet-class>ace.demo.appl.OssInfo</servlet-class>
+    </servlet>
+	<servlet>
+		<servlet-name>Comments</servlet-name>
+		<servlet-class>ace.demo.appl.CommentServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/UploadServlet.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>RdsInfo</servlet-name>
+		<url-pattern>/RdsInfo.do</url-pattern>
+	</servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OssInfo</servlet-name>
+        <url-pattern>/OssInfo.do</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MqsInfo</servlet-name>
+		<url-pattern>/MqsInfo.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Comments</servlet-name>
+		<url-pattern>/CommentServlet.do</url-pattern>
+	</servlet-mapping>
+
+</web-app>
